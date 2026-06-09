@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRES VALLES</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #5a3320;
+        }
+
+        /* HEADER CON IMAGEN Y ANIMACIÓN */
+        header {
+            background: 
+                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('images.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            animation: zoomFondo 10s infinite alternate;
+        }
+
+        /* ANIMACIÓN DEL TÍTULO */
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            letter-spacing: 3px;
+            animation: aparecer 2s ease-out;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomFondo {
+            from {
+                background-size: 100%;
+            }
+            to {
+                background-size: 110%;
+            }
+        }
+
+        /* BOTÓN */
+        .btn-regresar {
+            background-color: #f1c40f;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-regresar:hover {
+            background-color: #d4ac0d;
+            transform: scale(1.05);
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+	
+	p {
+            text-align: justify;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        /* IMÁGENES CENTRADAS */
+        .imagenes {
+            text-align: center;
+        }
+
+        .imagenes img {
+            display: inline-block;
+            margin: 10px;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .imagenes img:hover {
+            transform: scale(1.05);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<audio autoplay muted loop>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+    <h1>LUGARES DE INTERES</h1>
+    <button onclick="window.history.back()" class="btn-regresar">⬅ Regresar</button>
+</header>
+
+
+<div class="section" style="text-align:center;">
+
+    <video controls autoplay muted loop style="width:100%; max-width:600px; border-radius:10px;">
+        <source src="estefostas.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
+
+</div>
+
+<div class="container">
+
+    <div class="section">
+        <p>
+            A veces lo único que necesitamos es un lugar tranquilo, bonito y con buena vibra… y eso lo puedes encontrar en Tres Valles, en el hermoso estado de Veracruz.
+
+Imagínate caminando por sus parques, sentándote un rato a descansar bajo la sombra de los árboles o simplemente disfrutando del aire fresco mientras convives con tu familia o amigos. Aquí no hay prisas, todo se siente más relajado, más auténtico.
+
+Sus lugares de interés no son solo espacios, son experiencias: un paseo tranquilo, una tarde agradable, una charla con gente amable que te hace sentir como en casa. Cada rincón tiene algo especial, algo que te hace desconectarte del estrés y disfrutar el momento.
+
+Tres Valles no es un lugar lleno de lujos… pero sí está lleno de algo mucho más valioso: sencillez, calidez y momentos que se quedan contigo.
+
+Date la oportunidad de venir, recorrerlo y vivirlo por ti mismo… porque hay lugares que no solo se visitan, se sienten.
+        </p>
+    </div>
+
+    <div class="section">
+        <p>
+            <strong>Parque Miguel Hidalgo</strong><br>
+En el municipio de Tres Valles, el Parque Miguel Hidalgo se posiciona como uno de los espacios públicos más importantes y representativos de la localidad. Ubicado en una zona céntrica, este parque funciona como un punto de encuentro clave para la convivencia social y la vida comunitaria.
+
+El parque destaca por su ambiente tranquilo y su accesibilidad, lo que lo convierte en un lugar ideal para el esparcimiento de personas de todas las edades. Sus áreas verdes, bancas y espacios abiertos permiten a los visitantes disfrutar de momentos de descanso, recreación y convivencia familiar en un entorno agradable.
+
+A lo largo del tiempo, el Parque Miguel Hidalgo ha sido escenario de diversas actividades sociales, culturales y recreativas, consolidándose como un sitio donde se fortalecen los lazos entre los habitantes. Es común observar reuniones familiares, paseos cotidianos y momentos de interacción que reflejan la dinámica social del municipio.
+
+Además de su función recreativa, este parque tiene un valor simbólico importante, ya que forma parte del paisaje urbano e identidad de Tres Valles. Su presencia en el centro del municipio lo convierte en un referente tanto para los habitantes como para quienes visitan la localidad.
+        </p>
+            </div>
+
+<div class="imagenes">
+        <img src="parque1.png" alt="parque1">
+        <img src="parque2.png" alt="parque2">
+    </div>
+
+    <div class="section">
+        <p>
+            <strong>Parque Ecológico La Iguana</strong><br>
+            Este parque fue inaugurado en 2023 como parte de proyectos de mejoramiento urbano. Su principal característica es su enfoque ecológico, ya que fue diseñado para permitir el contacto directo con la naturaleza y fomentar la conciencia ambiental entre los visitantes.
+
+Se destaca como uno de los espacios naturales más representativos y valiosos de la región. Este lugar ofrece a los visitantes la oportunidad de convivir con la naturaleza en un entorno tranquilo, ideal para el descanso y la recreación.
+
+El parque se caracteriza por sus amplias áreas verdes, su vegetación abundante y un ambiente que invita a desconectarse del ritmo cotidiano. Es un espacio adecuado para realizar actividades al aire libre como caminatas, paseos familiares y momentos de relajación, lo que lo convierte en un punto de encuentro para habitantes y visitantes.
+
+Además de su función recreativa, el Parque Ecológico El Águila cumple un papel importante en la conservación del entorno natural, promoviendo el cuidado del medio ambiente y el respeto por los recursos naturales. Su existencia refleja el interés de la comunidad por mantener espacios que favorezcan el equilibrio ecológico y la convivencia responsable.        </p>
+            </div>
+
+ <div class="imagenes">
+        <img src="aguila1.png" alt="aguila1">
+        <img src="aguila2.png" alt="aguila2">
+    </div>
+
+
+
+    <div class="section">
+        <p>
+            <strong>Tanque de Agua de Tres Valles</strong><br>
+           En el municipio de Tres Valles, el tanque de agua se presenta como una de las estructuras más representativas de la localidad, no solo por su función esencial en el suministro del recurso hídrico, sino también por su valor como punto de referencia dentro de la comunidad.
+
+Esta infraestructura cumple un papel fundamental en la vida diaria de los habitantes, al garantizar el almacenamiento y distribución de agua potable, un recurso indispensable para el desarrollo del municipio. Gracias a su presencia, se asegura el abastecimiento en hogares, comercios y espacios públicos, contribuyendo al bienestar y la calidad de vida de la población.
+
+Más allá de su función práctica, el tanque de agua se ha convertido con el paso del tiempo en un elemento emblemático de Tres Valles. Su ubicación y visibilidad lo transforman en un punto de orientación y, en muchos casos, en un lugar de encuentro para los habitantes.        </p>
+   
+    </div>
+
+ <div class="imagenes">
+        <img src="tanque1.png" alt="tanque1">
+        <img src="tanque2.png" alt="tanque2">
+    </div>
+
+
+<div class="section">
+        <p>
+            <strong>Complejo deportivo</strong><br>
+          En el municipio de Tres Valles, la Unidad Deportiva Municipal se ha consolidado como uno de los principales espacios de recreación, actividad física y convivencia social. Este complejo deportivo representa un punto clave dentro de la vida cotidiana de la comunidad, al fomentar hábitos saludables y fortalecer la integración entre sus habitantes.
+
+El recinto cuenta con diversas instalaciones destinadas a la práctica de múltiples disciplinas, como fútbol, baloncesto y voleibol, así como áreas abiertas que permiten realizar actividades físicas al aire libre. Estas características lo convierten en un espacio accesible tanto para deportistas organizados como para familias que buscan un lugar adecuado para el esparcimiento.
+
+A lo largo del tiempo, la unidad deportiva ha sido escenario de encuentros, torneos locales y actividades recreativas que promueven la participación comunitaria. En este lugar, no solo se desarrollan habilidades deportivas, sino también valores como el trabajo en equipo, la disciplina y la convivencia.
+   
+    </div>
+
+<div class="imagenes">
+        <img src="complejo1.png" alt="complejo1">
+        <img src="complejo2.png" alt="complejo2">
+    </div>
+
+<div class="section">
+        <p>
+            <strong>Iglesia Catolica</strong><br>
+           En el municipio de Tres Valles, la iglesia católica representa uno de los espacios más significativos para la comunidad, no solo por su valor religioso, sino también por su importancia histórica y social. Este recinto se ha consolidado como un punto de encuentro donde convergen la fe, las tradiciones y la identidad cultural de sus habitantes.
+
+A lo largo del tiempo, la iglesia ha sido testigo de innumerables momentos que marcan la vida de las familias: celebraciones como bautizos, primeras comuniones y matrimonios, así como actos solemnes que acompañan etapas importantes de la vida. Cada uno de estos eventos contribuye a fortalecer el sentido de pertenencia y la unión comunitaria.
+
+Durante los fines de semana, especialmente los domingos, el ambiente refleja una notable participación social. Familias completas acuden a las celebraciones religiosas, generando un entorno de convivencia y respeto que trasciende lo espiritual y se convierte en un elemento clave de la vida cotidiana del municipio.
+        </p>
+
+
+
+
+</div>
+
+<div class="imagenes">
+        <img src="iglesia1.png" alt="iglesia1">
+        <img src="iglesia2.png" alt="iglesia2">
+    </div>
+
+
+<div class="section">
+        <p> Parafraceado por IA   </p>
+
+
+
+
+</div>
+
+
+
+ <div class="section">
+        <h2>Fuentes consultadas</h2>
+        <p>
+            
+<footer>
+    <ul>
+        <li><a href="https://www.google.com/maps/place/Parque+Miguel+Hidalgo/@18.2410237,-96.1348256,17z/data=!3m1!4b1!4m6!3m5!1s0x85c3ebe6ce21630f:0xc4b16dcf2cec2901!8m2!3d18.2410237!4d-96.1348256!16s%2Fg%2F11c521fgcc?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D">Parque Miguel Hidalgo</a></li>
+
+        <li><a href="https://www.google.com/maps/place/Parque+Ecol%C3%B3gico+El+%C3%81guila/@18.2435539,-96.1399446,17z/data=!3m1!4b1!4m6!3m5!1s0x85c3eb004073c523:0xd1384c8e8e33c0b9!8m2!3d18.2435539!4d-96.1399446!16s%2Fg%2F11y2qdnyb9?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D">Parque Ecologico las Iguanas</a></li>
+
+        <li><a href="https://www.google.com/maps/place/Complejo+deportivo+tresvallense/@18.241566,-96.1500186,17z/data=!3m1!4b1!4m6!3m5!1s0x85c3eb007c6e52d5:0x56b3691f8366ea25!8m2!3d18.241566!4d-96.1500186!16s%2Fg%2F11lzd4pfwk?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D">Complejo deportivo</a></li>
+
+	<li><a href="https://www.google.com/maps/place/Parroquia+Cristo+Rey/@18.2408225,-96.135134,3a,90y,81.45h,85.37t/data=!3m8!1e1!3m6!1sCIHM0ogKEICAgICk_L6Icg!2e10!3e11!6shttps:%2F%2Flh3.googleusercontent.com%2Fgpms-cs-s%2FABJJf52nykZnwpLUdhrO-QIrDOR2aAGBJiPndrfFUKXhiHLKRc628YwBjYKuS1VS5Guk-PulM6x55ykgBS1CneekDLZq1UyQf4EwoSqFXhMwfmQTG-UFJgPZUQ8jA0uthPEeUiNia4sZ%3Dw900-h600-k-no-pi4.634615384615387-ya181.45091923076922-ro0-fo100!7i8000!8i4000!4m14!1m7!3m6!1s0x85c3eb0b87df16d9:0xc6a259fb10a111e4!2sParroquia+Cristo+Rey!8m2!3d18.2408354!4d-96.1350659!16s%2Fg%2F11h7bbgsxq!3m5!1s0x85c3eb0b87df16d9:0xc6a259fb10a111e4!8m2!3d18.2408354!4d-96.1350659!16s%2Fg%2F11h7bbgsxq?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D">Iglesia Catolica</a></li>
+	
+
+    </ul>
+</footer>
+        </p>
+       
+        </div>
+
+
+
+</body>
+</html>

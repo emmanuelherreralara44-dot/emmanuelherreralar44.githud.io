@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRES VALLES</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #5a3320;
+        }
+
+        /* HEADER CON IMAGEN */
+        header {
+            background: 
+                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('images.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            animation: zoomFondo 10s infinite alternate;
+        }
+
+        /* ANIMACIÓN TÍTULO */
+        header h1 {
+            margin: 0;
+            letter-spacing: 3px;
+            font-size: 40px;
+            animation: aparecer 2s ease-out;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomFondo {
+            from { background-size: 100%; }
+            to { background-size: 110%; }
+        }
+
+        /* BOTÓN REGRESAR */
+        .btn-regresar {
+            display: inline-block;
+            background-color: #f1c40f;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-regresar:hover {
+            background-color: #d4ac0d;
+            transform: scale(1.05);
+        }
+
+        nav {
+            background-color: #3e2518;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        /* IMÁGENES CENTRADAS */
+        .imagenes {
+            text-align: center;
+        }
+
+        .imagenes img {
+            display: inline-block;
+            margin: 10px;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .imagenes img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    
+<h1>TRES VALLES</h1>
+    
+</header>
+
+
+
+<nav>
+
+    <a href="PAGUINA2.html" class="btn">Lugares</a>
+    <a href="PAGUINA4.html" class="btn">Emprendimiento</a>
+    <a href="PAGUINA3.html" class="btn">Economía</a>
+
+</nav>
+
+
+
+
+<div class="container">
+
+    <div id="historia" class="section">
+    
+    
+	<h1 class="bienvenida">¡BIENVENIDOS!</h1>   
+
+    </div>
+
+	<div style="text-align:center; margin-top:20px;">
+
+<img src="imageslogo.png" width="500">
+
+<h2 style="color:yellow;">
+Contador de visitas
+</h2>
+
+<h1 id="numero-visitas" style="color:white;">
+0
+</h1>
+
+</div>
+
+<script>
+
+if(localStorage.getItem("visitas") === null){
+
+    localStorage.setItem("visitas", "1");
+
+}else{
+
+    let visitas =
+    parseInt(localStorage.getItem("visitas"));
+
+    visitas++;
+
+    localStorage.setItem("visitas", visitas);
+
+}
+
+document.getElementById("numero-visitas").innerText =
+localStorage.getItem("visitas");
+
+</script>
+
+
+    
+
+
+
+
+<div class="container">
+
+    <div id="historia" class="section">
+        <p>
+            Ubicado en el corazón del estado de Veracruz, el municipio de Tres Valles es un destino que combina la riqueza natural, la tradición y la calidez de su gente. Rodeado de extensos campos verdes y bañado por un clima cálido y húmedo, este lugar ofrece un entorno ideal para quienes buscan conocer la esencia auténtica de la vida veracruzana.
+
+Tres Valles es reconocido por su importante actividad agrícola, especialmente en el cultivo de caña de azúcar, lo que le da un carácter productivo y dinámico. Sin embargo, más allá de su economía, el municipio destaca por su ambiente tranquilo, sus paisajes llenos de vida y sus espacios que invitan a la convivencia familiar y al descanso.
+
+Al recorrer sus calles y alrededores, podrás encontrar sitios de interés, áreas recreativas y rincones naturales que reflejan la identidad de la región. Además, su gastronomía típica, rica en sabores tradicionales, permite disfrutar de una experiencia completa que conecta con la cultura local.
+
+Visitar Tres Valles es más que conocer un lugar: es vivir la hospitalidad de su gente, descubrir sus tradiciones y dejarse envolver por la belleza de un municipio que, con sencillez y autenticidad, conquista a todo aquel que lo recorre.
+
+        </p>
+    </div>
+
+    <div class="imagenes">
+        <img src="introduccion3.png" alt="introduccion3">
+        <img src="imagen1.png" alt="imagen1">
+    </div>
+
+<div class="container">
+
+    <div id="historia" class="section">
+        <p>
+            <h1>  ¿Te gustaría descubrir un lugar lleno de vida, tradición y paisajes que te hacen sentir en casa? </h1>
+
+        </p>
+    </div>
+
+
+</div>
+
+<div class="container">
+
+    <div id="historia" class="section">
+        <p>
+            ¿Te gustaría descubrir un lugar lleno de vida, tradición y paisajes que te hacen sentir en casa? Entonces es momento de visitar el municipio de Tres Valles, en el hermoso estado de Veracruz.
+
+Aquí no solo encontrarás tranquilidad, sino también rincones especiales que vale la pena conocer: parques donde puedes relajarte, espacios naturales para disfrutar del aire libre y lugares que reflejan la esencia de su gente. Cada sitio tiene algo que contar, algo que se siente más que se explica.
+
+Pero Tres Valles también es trabajo, esfuerzo y orgullo. Su economía gira principalmente en torno al campo, donde la caña de azúcar y otros cultivos dan vida a la región. Ver de cerca esta actividad te permite entender el valor del esfuerzo diario de su gente y cómo la tierra es parte fundamental de su identidad.
+
+Y si hay algo que no puedes perderte, es conocer los pequeños emprendimientos locales. Desde fonditas llenas de sabor casero hasta negocios familiares que ofrecen productos únicos, aquí cada emprendimiento tiene una historia detrás. Son lugares donde no solo consumes, sino que apoyas sueños, tradición y pasión.
+
+Visitar Tres Valles no es solo hacer turismo, es conectar con su gente, con su cultura y con una forma de vida auténtica. Date la oportunidad de conocerlo… te aseguro que querrás volver.
+
+        </p>
+    </div>
+
+ <div class="imagenes">
+        <img src="intro.png" alt="intro">
+        <img src="introduccion2.png" alt="introduccion2">
+    </div>
+
+
+<div class="container">
+
+    <div id="historia" class="section">
+        <p>
+   Parafraseado por IA
+
+        </p>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

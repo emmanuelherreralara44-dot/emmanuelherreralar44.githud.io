@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRES VALLES</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #5a3320;
+        }
+
+        /* HEADER CON IMAGEN Y ANIMACIÓN */
+        header {
+            background: 
+                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('images.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            animation: zoomFondo 10s infinite alternate;
+        }
+
+        /* ANIMACIÓN DEL TÍTULO */
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            letter-spacing: 3px;
+            animation: aparecer 2s ease-out;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomFondo {
+            from {
+                background-size: 100%;
+            }
+            to {
+                background-size: 110%;
+            }
+        }
+
+        /* BOTÓN */
+        .btn-regresar {
+            background-color: #f1c40f;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-regresar:hover {
+            background-color: #d4ac0d;
+            transform: scale(1.05);
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+	
+	p {
+            text-align: justify;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        /* IMÁGENES CENTRADAS */
+        .imagenes {
+            text-align: center;
+        }
+
+        .imagenes img {
+            display: inline-block;
+            margin: 10px;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .imagenes img:hover {
+            transform: scale(1.05);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<button onclick="activarAudio()" style="
+position: fixed;
+top: 20px;
+right: 20px;
+padding: 10px 15px;
+border: none;
+border-radius: 8px;
+background: #f1c40f;
+cursor: pointer;
+">
+audio
+</button>
+
+<audio id="miAudio" loop>
+  <source src="audio1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function activarAudio() {
+  const audio = document.getElementById("miAudio");
+  audio.play();
+}
+</script>
+
+
+<header>
+    <h1>EMPRENDIMIENTO</h1>
+    <button onclick="window.history.back()" class="btn-regresar">⬅ Regresar</button>
+</header>
+
+<div class="container">
+
+    <div class="section">
+                <p>
+             
+<h1>Si estás en Tres Valles y tienes ganas de comer algo rico, casero y hecho con cariño, hay un lugar que no puedes dejar pasar: la fondita Shalom.</h1>
+       
+		</p>
+
+
+    </div>
+
+
+<div class="container">
+
+    <div class="section">
+                <p>
+
+Desde que llegas, el ambiente te hace sentir como en casa. El aroma de la comida recién hecha, el trato amable y ese sabor auténtico que solo se encuentra en la cocina tradicional… todo se combina para darte una experiencia que va más allá de solo comer.
+
+Aquí cada platillo tiene ese toque especial que recuerda a la comida de hogar, preparada con dedicación y con ingredientes frescos. Ya sea que vengas con familia, amigos o incluso solo, siempre encontrarás un espacio cómodo y una sonrisa que te recibe.
+
+Más que una fondita, Shalom es un lugar donde se comparten momentos, donde cada comida se disfruta y donde seguro querrás regresar.
+
+Date la oportunidad de probarlo… porque hay sabores que simplemente no se olvidan.
+        </p>
+    </div>
+
+
+
+<div class="imagenes">
+        <img src="empre1.png" alt="empre1" width="700" height="600">
+
+    </div>
+
+
+
+<div class="container">
+
+    <div class="section">
+        <h2>Les ofrecemos</h2>
+</div>
+       
+<div class="imagenes">
+        <img src="empre2.png" alt="empre2" width="700" height="600">
+    </div>
+
+
+ <div class="section">
+       
+        <p>Lo que realmente hace especial a Fondita Shalom no es solo la calidad de sus platillos, sino la sensación que deja en cada visita. Es ese tipo de lugar donde el tiempo pasa sin prisa, donde puedes sentarte con tranquilidad y disfrutar sin sentirte apresurado.
+
+Aquí, los detalles marcan la diferencia: la atención constante, el ambiente limpio y agradable, y ese equilibrio entre sencillez y buen gusto que genera confianza. Es un espacio que invita a quedarse un poco más, a disfrutar la conversación y a regresar sin pensarlo demasiado.
+
+Más que un lugar al que vienes a comer, es un sitio al que naturalmente quieres volver.      </p>
+       
+        </div>
+
+</div>
+
+    <div class="section">
+        <h2>Más que un lugar para comer, Fondita Shalom es un espacio donde el buen sabor, la atención y el ambiente hacen que quieras quedarte.</h2>
+       
+      </div>
+
+</div>
+
+<div class="imagenes">
+        <img src="empre3.png" alt="empre3"width="700" height="600">
+
+    </div>
+
+<div class="section">
+       
+        <p> Ven y disfruta de una experiencia única en Fondita Shalom
+ Te esperamos en Corregidora de Querétaro 27, Nuevo Tres Valles, 95300, en Tres Valles.
+
+Un lugar donde el sabor, la atención y el ambiente se combinan para hacerte sentir </p>
+       
+        </div>
+
+
+
+<div class="imagenes">
+        <img src="empred.png" alt="empred"width="700" height="600">
+
+    </div>
+
+
+
+
+<div class="section">
+
+ <div class="section">
+        <h2>Los valores</h2>
+       
+      </div>
+
+
+
+       
+        <p>   
+El respeto se refleja en la forma en que se atiende a cada cliente, brindando siempre un trato amable, digno y cercano. La responsabilidad está presente en la preparación de los alimentos, cuidando la calidad, la higiene y el sabor en cada detalle.
+
+El compromiso impulsa a ofrecer siempre lo mejor, buscando la satisfacción de quienes visitan el lugar. A esto se suma la honestidad, manteniendo precios justos y un servicio transparente.
+
+El cariño, ya que cada platillo se prepara como si fuera para la familia, creando una experiencia cálida y auténtica. </p>
+       
+        </div>
+
+<div class="section">
+        <p> Parafraceado por IA   </p>
+
+
+<div class="section">
+               <p>
+            
+<footer>
+    <ul>
+     
+        <li><a href="https://www.google.com/maps/place/Corregidora+de+Queretaro+27,+Nuevo+Tres+Valles,+95300+Tres+Valles,+Ver./@18.2386236,-96.1510539,15z/data=!3m1!4b1!4m6!3m5!1s0x85c3ebe315fafcd7:0x82a4039379287348!8m2!3d18.2386239!4d-96.1407542!16s%2Fg%2F11n3mx1786?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D">Ubicacion</a></li>
+
+       
+
+    </ul>
+</footer>
+        </p>
+       
+        </div>
+
+   <h2> Envianos un correo electrónico
+        a emmanuelherreralara@gmail.com</h2>
+
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=emmanuelherreralara44@gmail.comsu=emmanuelherreralara44@gmail.combody=Hola,%20me%20gustaría..." target="_blank">
+   Escríbenos por Gmail
+</a>
+
+
+
+
+</body>
+</html>
